@@ -1,9 +1,12 @@
+```html
 <!DOCTYPE html>
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>六郷ゆるギター教室　大田区南六郷で1時間1,000円の個人レッスン</title>
+
 <style>
 body {
     margin: 0;
@@ -11,11 +14,6 @@ body {
     color: #2b2b2b;
     font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", sans-serif;
     line-height: 1.9;
-}
-
-.hero {
-    width: 100%;
-    display: block;
 }
 
 .container {
@@ -32,7 +30,23 @@ body {
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
-h1,h2 {
+.lesson-info {
+    padding: 24px;
+}
+
+.lesson-info h1 {
+    font-size: 36px;
+    color: #5b3a29;
+    margin-bottom: 12px;
+}
+
+.lesson-info p {
+    font-size: 14px;
+    color: #000000;
+    line-height: 1.8;
+}
+
+h1, h2 {
     margin-top: 0;
 }
 
@@ -44,13 +58,24 @@ ul {
     padding-left: 20px;
 }
 
-form input, form textarea {
+form {
     width: 100%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    max-width: 100%;
     padding: 12px;
     margin-top: 10px;
     border-radius: 10px;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
 }
 
 button {
@@ -69,66 +94,115 @@ button {
     color: #666;
 }
 
+.heri {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* スマホ調整 */
+@media screen and (max-width: 768px) {
+
+    .container {
+        padding: 14px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .lesson-info {
+        padding: 18px;
+    }
+
+    .lesson-info h1 {
+        font-size: 28px;
+        line-height: 1.4;
+    }
+
+    .lesson-info p {
+        font-size: 15px;
+    }
+
+    form input,
+    form textarea {
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
 </style>
 </head>
+
 <body>
 
 <div class="lesson-info">
-  <h1>六郷ゆるギター教室</h1>
+    <h1>六郷ゆるギター教室</h1>
 
-  <p>
-    大田区南六郷(川崎・蒲田・羽田近郊)のギター個人レッスンです。<br>
-    1時間1,000円でアコギもエレキも未経験・初心者歓迎♪<br>
-    貸出機材完備で手ぶらOK！<br>
-    ご予約・お問い合わせは公式LINEか問い合わせフォームからどうぞ！
-  </p>
+    <p>
+        大田区南六郷(川崎・蒲田・羽田近郊)のギター個人レッスンです。<br>
+        1時間1,000円でアコギもエレキも未経験・初心者歓迎♪<br>
+        貸出機材完備で手ぶらOK！<br>
+        ご予約・お問い合わせは公式LINEか問い合わせフォームからどうぞ！
+    </p>
 </div>
-
-<style>
-.lesson-info h1 {
-  font-size: 36px;
-  color: #5b3a29;
-  margin-bottom: 12px;
-}
-
-.lesson-info p {
-  font-size: 14px;
-  color: #000000;
-  line-height: 1.8;
-}
-</style>
 
 <img src="heri.png" class="heri">
 
-<a href="https://lin.ee/x1XLRh0"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="36" border="0"></a>
-
 <div class="container">
 
-<div class="card">
-<h1>☝公式LINEでもご予約・お問い合わせ受け付けております！</h1>
+    <div class="card">
+        <h1>☝公式LINEでもご予約・お問い合わせ受け付けております！</h1>
 
+        <a href="https://lin.ee/x1XLRh0">
+            <img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png"
+                 alt="友だち追加"
+                 height="36">
+        </a>
+    </div>
 
-<div class="card">
-<h2>メールお問い合わせフォーム</h2>
+    <div class="card">
+        <h2>メールお問い合わせフォーム</h2>
 
-<form action="https://formsubmit.co/fercy0w0@gmail.com" method="POST">
-<input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_subject" value="六郷ゆるギター教室 レッスンご予約・お問い合わせ">
+        <form action="https://formsubmit.co/fercy0w0@gmail.com" method="POST">
 
-<input type="text" name="name" placeholder="お名前(ハンドルネーム可)" required>
-<input type="email" name="email" placeholder="メールアドレス" required>
-<textarea name="message" rows="6" placeholder="お問い合わせ内容"></textarea>
+            <input type="hidden" name="_captcha" value="false">
 
-<button type="submit">送信する</button>
-</form>
+            <input type="hidden"
+                   name="_subject"
+                   value="六郷ゆるギター教室 レッスンご予約・お問い合わせ">
 
-<p class="notice">
-<br>
-レッスンは木土日祝の11～18時に営業しております。オンライン相談は年中無休で対応いたします！
-</p>
+            <input type="text"
+                   name="name"
+                   placeholder="お名前(ハンドルネーム可)"
+                   required>
+
+            <input type="email"
+                   name="email"
+                   placeholder="メールアドレス"
+                   required>
+
+            <textarea name="message"
+                      rows="6"
+                      placeholder="お問い合わせ内容"></textarea>
+
+            <button type="submit">送信する</button>
+
+        </form>
+
+        <p class="notice">
+            <br>
+            レッスンは木土日祝の11～18時に営業しております。<br>
+            オンライン相談は年中無休で対応いたします！
+        </p>
+    </div>
 
 </div>
 
-</div>
 </body>
 </html>
+```
